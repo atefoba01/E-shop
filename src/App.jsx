@@ -61,18 +61,18 @@ const App = () => {
       className="
     bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden"
     >
-      <Navbar />
-      <Hero />
+      <Navbar handleOrderPopup={handleOrderPopup} />
+      <Hero handleOrderPopup={handleOrderPopup} />
       <Category />
       <Category2 />
       <Services />
       <Banner data={BannerData} />
       <Products />
       <Banner data={BannerData2} />
-      {/* <Blogs /> */}
-      {/* <Partners /> */}
-      {/* <Footer /> */}
-      {/* <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} /> */}
+      <Blogs />
+      <Partners />
+      <Footer />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   );
 };
